@@ -1,2 +1,2 @@
-npm install hexo-cil
+npm install -g hexo-cli
 hexo generate
