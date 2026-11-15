@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Hexo build output & local cache
+public/
+db.json
+.deploy_git/
+.deploy*/
+*.log
+npm-debug.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# WorkBuddy session data & local backups
+.workbuddy/
