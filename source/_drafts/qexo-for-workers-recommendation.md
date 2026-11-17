@@ -1,14 +1,6 @@
 ---
-title: 一个 Worker 撑起整套博客后台：Qexo for Workers 推荐
-date: 2026-11-17 20:02:42
-tags:
-  - Cloudflare Workers
-  - Hexo
-  - 开源
-  - MCP
-categories:
-  - 开源推荐
-excerpt: 把 Django 版 Qexo 重写成 Cloudflare Workers 原生应用：单个 Worker 承载管理 API、主题兼容接口与 MCP 服务端，文章仍提交到 Git，运行时零 npm 依赖。本文梳理它的定位、能力、亮点、适用边界，以及什么情况下不该选它。
+title: qexo-for-workers-recommendation
+date: 2026-11-17 12:09:49
 ---
 静态博客的写作体验，长期依赖本地环境：装 Node、配主题、记住几条 Hexo 命令，换一台电脑就得重新来一遍。Qexo 给出过一个答案——用 Django 搭一个 Web 后台，把写作搬进浏览器；代价是多了一个需要常驻的 Python 服务和一套数据库，以及随之而来的运维。
 
