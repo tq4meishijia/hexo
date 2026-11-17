@@ -37,7 +37,7 @@ title: 一个 Worker 撑起整套博客后台：Qexo for Workers 推荐
 
 **做不到的事写得清楚。** 36 项迁移对照里 29 项原生、5 项等价替代、2 项平台不可行（云端 Python 脚本、依赖 TCP 的图床），磁盘 Provider 映射为 R2，Passkey 交给 Cloudflare Access。这比宣称「100% 兼容」可信。
 
-**安全基线没有被省略。** PBKDF2-SHA256（100,000 次迭代 + 随机盐）、HttpOnly + SameSite=Lax + HMAC 会话、写操作强制 CSRF、登录限流、凭据一律掩码、MCP 令牌与 WebHook Key 只存 SHA-256；Turnstile 可选且默认关闭。
+**安全基线没有被省略。** PBKDF2（SHA-256，100,000 次迭代 + 随机盐）、HttpOnly + SameSite=Lax + HMAC 会话、写操作强制 CSRF、登录限流、凭据一律掩码、MCP 令牌与 WebHook Key 只存 SHA-256；Turnstile 可选且默认关闭。
 
 ## 适用场景
 
